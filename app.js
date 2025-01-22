@@ -30,6 +30,10 @@ function intentar(){
         alert("El número de intentos fue: "+numero_de_intentos);
         document.getElementById("reiniciar").removeAttribute("disabled");
     }
+    else if(intento.value == ""){
+        alert("ingresa un número válido");
+
+    }
     else if(intento.value<numerosecreto){
         alert("intenta de nuevo, el numero secreto es mayor");
         numero_de_intentos++;
