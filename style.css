@@ -161,3 +161,11 @@ button {
 .close-button:hover {
     background-color: #1354A5;
 }
+
+.container__imagen-persona{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
