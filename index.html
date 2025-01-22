@@ -23,13 +23,22 @@
                 </div>
                 <input id="intento" type="number" min="1" max="10" class="container__input">
                 <div class="chute container__botones">
-                    <button class="container__boton" onclick="intentar()">Intentar</button>
+                    <button class="container__boton" id="intentar" onclick="intentar()">Intentar</button>
                     <button class="container__boton"  disabled id="reiniciar" onclick="alertFunction()">Nuevo juego</button>
                 </div>
             </div>
             <img src="./img/ia.png" alt="Una persona mirando a la izquierda" class="container__imagen-persona" />
         </div>
     </div>
+
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">¡Felicidades!</h2>
+            <p id="modalMessage">Has adivinado el número secreto.</p>
+            <button id="closeModal" class="close-button">Cerrar</button>
+        </div>
+    </div>
+
 
 
 

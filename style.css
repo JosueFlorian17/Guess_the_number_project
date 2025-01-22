@@ -27,8 +27,8 @@ body::before {
 }
 
 .container {
-    width: 1200px;
-    height: 600px;
+    width: 70%;
+    height: 61%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,30 +38,32 @@ body::before {
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
     position: relative;
+    overflow: hidden;
+    padding-bottom: 2%; 
 }
 
 
 .container__contenido {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
 .container__informaciones {
     flex: 1;
-    padding: 3rem;
+    padding: 3vw;
 }
 
 .container__boton {
-    border-radius: 16px;
+    border-radius: 1vw;
     background: #1875E8;
-    padding: 16px 24px;
+    padding: 1vw 1.5vw;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: 700;
     border: none;
-    margin-top: 2rem;
+    margin-top: 2vw;
 }
 
 .container__boton:disabled {
@@ -78,26 +80,28 @@ body::before {
 
 .container__input {
     width: 100%;
-    height: 72px;
-    border-radius: 16px;
+    height: 5vw;
+    border-radius: 1vw;
     background-color: #FFF;
     border: none;
     color: #1875E8;
-    padding: 2rem;
-    font-size: 24px;
+    padding: 2vw;
+    font-size: 1.5vw;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
 
 .container__botones {
     display: flex;
-    gap: 2em;
+    gap: 2vw;
+
+    
 }
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 70px;
-    padding-bottom: 3rem;
+    font-size: 4vw;
+    padding-bottom: 1vw;
 }
 
 p,
@@ -106,6 +110,54 @@ button {
 }
 
 .texto__parrafo {
-    font-size: 32px;
+    font-size: 1.85vw;
     font-weight: 400;
+}
+
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+#modalTitle {
+    font-size: 24px;
+    color: #1875E8;
+}
+
+#modalMessage {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.close-button {
+    padding: 10px 20px;
+    background-color: #1875E8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-button:hover {
+    background-color: #1354A5;
 }
